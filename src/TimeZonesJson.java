@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Main {
+public class TimeZonesJson {
     private static final String[] urlList = {
             "http://worldtimeapi.org/api/timezone/Europe/London",
             "http://worldtimeapi.org/api/timezone/America/New_York",
@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("=== Current Date/Times Around the World ===");
         for (String url : urlList) {
-            extractCurrentTimeInfo(url);
+            TimeZonesJson.extractCurrentTimeInfo(url);
         }
     }
 
